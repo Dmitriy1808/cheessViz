@@ -1,7 +1,7 @@
 #include <stdio.h>
 void chessdek(char deck[8][8]){
     char let[]={'r','n','b','q','k','b','n','r'};
-    for (int j=0;j<8; ++j){
+    for (int j=0; j<8; ++j){
         deck[0][j] = let[j];
         deck[7][j] = let[j]-32;
         deck[1][j] = 'p';
@@ -13,7 +13,7 @@ void chessdek(char deck[8][8]){
 }
 void  prchessdek ( char deck [8][8]){
 for ( int i=0; i <8; ++i){
-for (int j=0; j<8;++j){
+for (int j=0; j<8; ++j){
 printf("%c ",deck[i][j]);
 }
 printf("\n");
