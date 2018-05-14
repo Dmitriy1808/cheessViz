@@ -1,4 +1,5 @@
-#include <stdio.c>
+#include "board-print-plain.h"
+#include <stdio.h>
 
 void board_print_plane(deck[8][8]){
     for(i=0; i<8; ++i){
@@ -7,6 +8,6 @@ void board_print_plane(deck[8][8]){
     }
         printf("\n");
     }
-    printf("---------------
-    printf("abcdef
+    printf("|---------------|\n");
+    printf(" A B C D E F G H \n");
 }
