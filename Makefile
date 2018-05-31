@@ -3,7 +3,7 @@ CC = gcc
 OBJ = $(CC) -c $< -o $@ $(CFLAGS)
 MKDIR_BUILD = mkdir -p build/src
 
-.PHONY: clean test
+
 
 default: bin/chess.exe
 
