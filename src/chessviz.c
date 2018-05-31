@@ -1,4 +1,5 @@
-#include <stdio.h>
+#include "chessviz.h"
+
 void chessdek(char deck[8][8]){
     char let[]={'r','n','b','q','k','b','n','r'};
     for (int j=0; j<8; ++j){

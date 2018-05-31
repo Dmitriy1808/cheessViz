@@ -1,7 +1,7 @@
 #define CTEST_MAIN
 
 #include <board_read.h>
-#include <board_start.h>
+#include <chessviz.h>
 #include <board.h>
 
 #include <ctest.h>
@@ -20,7 +20,7 @@ CTEST(Syntax, Incorrect) {
 
 CTEST(Black_pawn, Correct) {
     char deck[8][8];
-    board_start(deck);
+    chessdek(deck);
     char input[] = "a7-a5";
     int move[4];
     reformat_input(input, move);
@@ -31,7 +31,7 @@ CTEST(Black_pawn, Correct) {
 
 CTEST(Black_pawn, Incorrect) {
     char deck[8][8];
-    board_start(deck);
+    chessdek(deck);
     char input[] = "a7-b6";
     int move[4];
     reformat_input(input, move);
@@ -42,7 +42,7 @@ CTEST(Black_pawn, Incorrect) {
 
 CTEST(White_pawn, Correct) {
     char deck[8][8];
-    board_start(deck);
+    chessdek(deck);
     char input[] = "h2-h4";
     int move[4];
     reformat_input(input, move);
@@ -53,7 +53,7 @@ CTEST(White_pawn, Correct) {
 
 CTEST(White_pawn, Incorrect) {
     char deck[8][8];
-    board_start(deck);
+    chessdek(deck);
     char input[] = "e2-d2";
     int move[4];
     reformat_input(input, move);
@@ -64,7 +64,7 @@ CTEST(White_pawn, Incorrect) {
 
 CTEST(Check_move, Correct) {
     char deck[8][8];
-    board_start(deck);
+    chessdek(deck);
     char input[] = "f2-f4";
     int move[4];
     reformat_input(input, move);
@@ -75,7 +75,7 @@ CTEST(Check_move, Correct) {
 
 CTEST(Check_move, Incorrect) {
     char deck[8][8];
-    board_start(deck);
+    chessdek(deck);
     char input[] = "e5-e6";
     int move[4];
     reformat_input(input, move);
